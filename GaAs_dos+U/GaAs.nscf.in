@@ -6,9 +6,12 @@
     pseudo_dir='/home/kirill/Desktop/src/q-e-pseudos/'
 /
 &system
-    ibrav = 2, celldm(1)=10.6890340720604
-    nat = 2, ntyp = 2
+    ibrav = 2, celldm(1)=9.4486
+    nat = 2, ntyp = 2, nspin=2
     ecutwfc = 50.0, ecutrho = 400
+    starting_magnetization(1)=  0.2
+    starting_magnetization(2)= -0.2
+    tot_magnetization = 0.0
     nbnd=36,
 	occupations = 'tetrahedra'
 /
@@ -24,3 +27,6 @@ Ga  0.00000000  0.00000000  0.00000000
 As  0.25000000  0.25000000  0.25000000 
 K_POINTS automatic
 12 12 12 0 0 0
+HUBBARD (ortho-atomic)
+U Ga-3d 3.0
+U As-4p 3.0

@@ -3,7 +3,7 @@ unset log                              # remove any log-scaling
 unset label                            # remove any previous labels
 set xtic auto                          # set xtics automatically
 set ytic auto                          # set ytics automatically
-set title "Density of states (DOS) of NiO with DFT+U"
+set title "Density of states (DOS) of GaAs with DFT+U"
 set xlabel "Energy (eV)"
 set ylabel "DOS"
 set arrow 1 from 15.691,-2.5 to 15.691,2.5 nohead ls 10 dt 2

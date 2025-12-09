@@ -2,6 +2,6 @@
     prefix='GaAs'
     outdir='./outdir/'
     fildos='gaas.dos.dat'
-    emin=5
-    emax=25
+    emin=-7
+    emax=7
 /

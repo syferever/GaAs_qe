@@ -1,5 +1,5 @@
 
-     Program DOS v.7.5 starts on  9Dec2025 at  0:40:47 
+     Program DOS v.7.5 starts on 10Dec2025 at  0:28:37 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -11,7 +11,7 @@
      http://www.quantum-espresso.org/quote
 
      Serial version
-     21388 MiB available memory on the printing compute node when the environment starts
+     20824 MiB available memory on the printing compute node when the environment starts
 
 
      Reading xml data from directory:
@@ -37,10 +37,10 @@
      Tetrahedra used
 
 
-     DOS          :   1m 2.29s CPU   1m 2.74s WALL
+     DOS          :      4.24s CPU      4.31s WALL
 
 
-   This run was terminated on:   0:41:50   9Dec2025            
+   This run was terminated on:   0:28:41  10Dec2025            
 
 =------------------------------------------------------------------------------=
    JOB DONE.

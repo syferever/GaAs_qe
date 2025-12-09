@@ -1,0 +1,29 @@
+&CONTROL
+    calculation='nscf'
+    prefix='GaAs'
+    restart_mode='from_scratch'
+    outdir='./outdir'
+    pseudo_dir='/home/kirill/Desktop/src/q-e-pseudos/'
+/
+&system
+    ibrav = 2, celldm(1)=10.689034072
+    nat = 2, ntyp = 2
+    ecutwfc = 50.0, ecutrho = 400
+    nbnd=36,
+	occupations = 'tetrahedra'
+/
+&electrons
+    mixing_beta = 0.3,
+    conv_thr = 1d-9
+/
+ATOMIC_SPECIES
+Ga 69.723 Ga.pbesol-dnl-rrkjus_psl.1.0.0.UPF
+As 74.921595 As.pbesol-n-rrkjus_psl.0.2.UPF
+ATOMIC_POSITIONS crystal
+Ga  0.00000000  0.00000000  0.00000000 
+As  0.25000000  0.25000000  0.25000000 
+K_POINTS automatic
+12 12 12 0 0 0
+HUBBARD (ortho-atomic)
+U Ga-3d 3.0
+U As-4p 3.0

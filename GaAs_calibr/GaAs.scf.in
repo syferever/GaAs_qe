@@ -1,0 +1,32 @@
+&CONTROL
+    calculation='scf'
+    prefix='GaAs'
+    restart_mode='from_scratch'
+    outdir='./outdir'
+    pseudo_dir='/home/kirill/Desktop/src/q-e-pseudos/'
+    tprnfor   = .true.
+/
+&system
+    ibrav = 2, celldm(1)=9.4486
+    nat = 2, ntyp = 2, nspin=2
+    ecutwfc = 25.0, ecutrho = 400
+    starting_magnetization(1)=  0.2
+    starting_magnetization(2)= -0.2
+    tot_magnetization = 0.0
+    nbnd=36,
+ /
+ &electrons
+    mixing_beta = 0.3,
+    conv_thr = 1d-9
+ /
+ATOMIC_SPECIES
+Ga 69.723 Ga.pbesol-dnl-rrkjus_psl.1.0.0.UPF
+As 74.921595 As.pbesol-n-rrkjus_psl.0.2.UPF
+ATOMIC_POSITIONS crystal
+Ga  0.00000000  0.00000000  0.00000000 
+As  0.25000000  0.25000000  0.25000000 
+K_POINTS automatic
+4 4 4 0 0 0
+HUBBARD (ortho-atomic)
+U Ga-3d 3.0
+U As-4p 3.0
